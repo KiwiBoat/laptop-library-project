@@ -1,8 +1,9 @@
-package be.ehb.laptopLibraryProject.laptopLibraryProject;
+package be.ehb.laptopLibraryProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+// Combination of the 3 annotations: Configuration, EnableAutoConfiguration and ComponentScan
 @SpringBootApplication
 public class LaptopLibraryProjectApplication {
 
