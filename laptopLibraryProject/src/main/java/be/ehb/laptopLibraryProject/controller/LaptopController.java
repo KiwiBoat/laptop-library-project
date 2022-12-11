@@ -17,4 +17,13 @@ public class LaptopController {
 		return "home";
 	}
 	
+	@GetMapping("/laptop_adder")
+	public String laptopAdder() {
+		return "laptopAdder";
+	}
+	
+	@GetMapping("/all_laptops")
+	public String allLaptops() {
+		return "allLaptops";
+	}
 }
