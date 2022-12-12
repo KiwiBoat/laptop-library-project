@@ -50,7 +50,9 @@
 
 	<div class="container my-5 p-5" style="border:5px solid black">
 		<h4 class="text-center">Add New Laptop</h4>
-		<form class="col-md-4 offset-md-4">
+		<!--added the thymeleaf action and method-->
+		<!--to add inside form tab -> th:action="@(/save)" method="post"-->
+		<form class="col-md-4 offset-md-4" th:action="@{/save}" method="post" >
 			<div class="mb-3">
 				<label for="brand" class="form-label">Brand
 					</label> <input type="text" class="form-control" name="brand">
