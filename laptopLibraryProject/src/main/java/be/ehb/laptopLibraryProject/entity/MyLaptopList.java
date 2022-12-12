@@ -1,26 +1,20 @@
 package be.ehb.laptopLibraryProject.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 @Entity
-public class Laptop {
+@Table(name="MyLaptops")
+public class MyLaptopList {
 	
-	
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Id
 	private int id;
 	private String brand;
 	private String model;
 	private String serialnumber;
 	
-	public Laptop(int id, String brand, String model, String serialnumber) {
+	public MyLaptopList(int id, String brand, String model, String serialnumber) {
 		super();
 		this.id = id;
 		this.brand = brand;
@@ -28,7 +22,7 @@ public class Laptop {
 		this.serialnumber = serialnumber;
 	}
 
-	public Laptop() {
+	public MyLaptopList() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -64,5 +58,8 @@ public class Laptop {
 	public void setSerialnumber(String serialnumber) {
 		this.serialnumber = serialnumber;
 	}
+	
+	
+
 	
 }

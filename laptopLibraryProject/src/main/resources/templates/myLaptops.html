@@ -11,6 +11,7 @@
 
 	<title>Laptop Library</title>
 
+
 </head>
 
 <body>
@@ -59,44 +60,17 @@
 			</thead>
 			<tbody>
 
-				
 				<tr th.each="l :${laptop}">
 					<td th:text=${l.id} ></td>
 					<td th:text=${l.brand} ></td>
 					<td th:text=${l.model} ></td>
 					<td th:text=${l.serialnumber} ></td>
-					<td> <a class="btn btn-secondary btn-sm" th:href="@/mylist/{id}(id=${l.id})"></a> Add To MyLaptop </td>
+					<td> <a></a> </td>
 				</tr>
-				
-				
-				<tr>
-					<th scope="row">1</th>
-					<td>Lenovo</td>
-					<td>Legion</td>
-					<td>1234567</td>
-					<td>@mdo</td>
-				</tr>
-
-				<!--    <tr>-->
-				<!--      <th scope="row">2</th>-->
-				<!--      <td>Acer</td>-->
-				<!--      <td>Aspire</td>-->
-				<!--      <td>7654321</td>-->
-				<!--       <td>@mdo</td>-->
-				<!--    </tr>-->
-				<!--    <tr>-->
-				<!--      <th scope="row">3</th>-->
-				<!--      <td>Dell</td>-->
-				<!--      <td>XPS</td>-->
-				<!--       <td>1111111</td>-->
-				<!--       <td>@mdo</td>-->
-				<!--    </tr>-->
 
 			</tbody>
 		</table>
 	</div>
-
-
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
